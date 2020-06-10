@@ -1,8 +1,5 @@
 <template>
-  <div id="app">
+  <div class="grey darken-1 empty-layout">
     <router-view />
   </div>
 </template>
-
-<style lang="scss">
-</style>
