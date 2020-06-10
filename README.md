@@ -1,4 +1,4 @@
-# internship-candidate-manager-system
+# Internship Candidate Management System
 
 ## Project setup
 ```
