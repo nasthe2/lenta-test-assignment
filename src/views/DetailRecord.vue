@@ -53,8 +53,6 @@ export default {
       ...record
     };
 
-    debugger
-
     this.loading = false;
   }
 };
