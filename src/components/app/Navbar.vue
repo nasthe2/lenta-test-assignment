@@ -5,7 +5,8 @@
         <a href="#" @click.prevent="$emit('click')">
           <i class="material-icons black-text">dehaze</i>
         </a>
-        <span class="black-text">{{ date | date("datetime") }}</span>
+        <!-- <span class="black-text">{{ date | date("date") }}</span> -->
+        <span class="black-text">ЛЕНТА. Стажёр</span>
       </div>
 
       <ul class="right hide-on-small-and-down">

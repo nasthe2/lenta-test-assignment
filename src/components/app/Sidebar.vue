@@ -19,25 +19,12 @@ export default {
   data: () => ({
     links: [
       {
-        title: "Счет",
-        url: "/",
-        exact: true
+        title: "Заявки",
+        url: "/"
       },
       {
-        title: "История",
-        url: "/history"
-      },
-      {
-        title: "Планирование",
-        url: "/planning"
-      },
-      {
-        title: "Новая запись",
+        title: "Заполнить форму",
         url: "/record"
-      },
-      {
-        title: "Категории",
-        url: "/categories"
       }
     ]
   })

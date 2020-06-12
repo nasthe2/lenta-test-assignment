@@ -6,6 +6,7 @@ import router from "./router";
 import store from "./store";
 import dateFilter from "./filters/date.filter";
 import messagePlugin from "./utils/message.plugin";
+import tooltipDirective from "./directives/tooltip.directive";
 import "materialize-css/dist/js/materialize.min";
 
 import firebase from "firebase/app";
@@ -18,6 +19,8 @@ Vue.use(messagePlugin);
 Vue.use(Vuelidate);
 
 Vue.filter("date", dateFilter);
+
+Vue.directive("tooltip", tooltipDirective);
 
 firebase.initializeApp({
   apiKey: "AIzaSyAfwhUQfsMnUCnpU3tQctgWGyRAQ84wLqI",
