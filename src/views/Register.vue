@@ -74,6 +74,12 @@
       </div>
       <p>
         <label>
+          <input type="checkbox" v-model="admin" />
+          <span>Режим администратора</span>
+        </label>
+      </p>
+      <p>
+        <label>
           <input type="checkbox" v-model="agree" />
           <span>С правилами согласен</span>
         </label>
@@ -104,6 +110,7 @@ export default {
     email: "",
     password: "",
     name: "",
+    admin: false,
     agree: false
   }),
   validations: {
@@ -131,6 +138,7 @@ export default {
       const formData = {
         email: this.email,
         password: this.password,
+        admin: this.admin,
         name: this.name
       };
 

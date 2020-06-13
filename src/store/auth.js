@@ -10,12 +10,13 @@ export default {
         throw e;
       }
     },
-    async register({ dispatch, commit }, { email, password, name }) {
+    async register({ dispatch, commit }, { email, password, name, admin }) {
       try {
         await firebase.auth().createUserWithEmailAndPassword(email, password);
         const uid = await dispatch("getUid");
         await firebase.database().ref(`/users/${uid}/info`).set({
-          name
+          name,
+          admin
         });
       } catch (e) {
         commit("setError", e);
